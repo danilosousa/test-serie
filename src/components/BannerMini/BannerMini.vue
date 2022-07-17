@@ -2,10 +2,16 @@
   <div>
     <section class="banner__mini">
       <div class="container">
-        <ul class="banner__mini-list">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
+        <ul class="banner__mini--list">
+          <li class="banner__mini--list--racoes">
+            <img src="../../assets/mini-banner-01.png" alt="">
+          </li>
+          <li class="banner__mini--list--brinquedos">
+            <img src="../../assets/mini-banner-01.png" alt="">
+          </li>
+          <li class="banner__mini--list--acessorioss">
+            <img src="../../assets/mini-banner-01.png" alt="">
+          </li>
         </ul>
       </div>
     </section>
@@ -21,10 +27,16 @@ export default {
 
 <style lang="scss">
   .banner__mini {
+    background: #ffa200;
+    padding: 20px 0;
     &--list {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
+      width: 100%;
+      li {
+        margin: 0 10px;
+      }
     }
   }
 </style>
